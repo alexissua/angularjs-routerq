@@ -36,7 +36,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "start": "node server.js"
   },
   "dependencies": {
     "angular-ui-router": "^0.4.2",
