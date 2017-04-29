@@ -15,6 +15,8 @@ app.use(function(request, response, next){
 	}
 });
 
-app.use(express.logger('dev'));
+//app.use(express.logger('dev'));
 app.use(gzippo.staticGzip("" + __dirname + "/dist"));
-//app.listen(process.env.PORT || 5000);
+app.listen(PORT, function(){
+  console.log("Express server is up on " + PORT + " port.");
+});
